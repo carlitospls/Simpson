@@ -2,6 +2,9 @@ package es.daw.simpson.repository;
 
 
 
+import es.daw.simpson.model.Personaje;
+
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -10,7 +13,7 @@ import java.util.List;
  *
  * Las edades son aproximadas (en la serie los personajes no envejecen).
  */
-public class PersonajeRepositorio {
+public class PersonajeRepository {
 
     // List.of() crea una lista INMUTABLE: si alguien intenta hacer add() o remove(),
     // salta una excepción. Así demostramos que los streams no tocan la lista original.
@@ -46,6 +49,15 @@ public class PersonajeRepositorio {
             new Personaje("Otto",     "Mann",       30, "Conductor de autobús",   "Escuela Primaria",  false),
             new Personaje("Willie",   "",           50, "Conserje",               "Escuela Primaria",  false)
     );
+
+    List<Personaje> personajes = new ArrayList<>();
+
+    public PersonajeRepository() {
+
+        Personaje p1 = new Personaje("Homer",    "Simpson",    39, "Inspector de seguridad", "Central Nuclear",   true);
+        personajes.add(p1);
+
+    }
 
     public List<Personaje> findAll() {
         return PERSONAJES;
