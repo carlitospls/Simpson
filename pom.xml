@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>es.daw</groupId>
-    <artifactId>Simpson</artifactId>
+    <artifactId>simpson</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>Simpson</name>
+    <name>simpson</name>
     <packaging>war</packaging>
 
     <properties>

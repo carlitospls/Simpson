@@ -1,7 +1,6 @@
 package es.daw.simpson.repository;
 
 
-
 import es.daw.simpson.model.Personaje;
 
 import java.util.ArrayList;
@@ -50,14 +49,19 @@ public class PersonajeRepository {
             new Personaje("Willie",   "",           50, "Conserje",               "Escuela Primaria",  false)
     );
 
-    List<Personaje> personajes = new ArrayList<>();
-
-    public PersonajeRepository() {
-
-        Personaje p1 = new Personaje("Homer",    "Simpson",    39, "Inspector de seguridad", "Central Nuclear",   true);
-        personajes.add(p1);
-
-    }
+//    // ------------ a la antigua... kk -----------------
+//    List<Personaje> personajes = new ArrayList<>();
+//
+//    public PersonajeRepository(){
+//        Personaje p1 = new Personaje("Homer",    "Simpson",    39, "Inspector de seguridad", "Central Nuclear",   true);
+//        personajes.add(p1);
+//
+//        Personaje p2 = new Personaje("Marge",    "Simpson",    36, "Ama de casa",            "Casa Simpson",      true);
+//        personajes.add(p2);
+//
+//        personajes.add(new Personaje("Bart",     "Simpson",    10, "Estudiante",             "Escuela Primaria",  true));
+//    }
+//    // --------------------------
 
     public List<Personaje> findAll() {
         return PERSONAJES;
